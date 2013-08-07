@@ -3,13 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Real Estate DealMeter</title>
-  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-  <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-  
-  <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
 
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -140,32 +139,38 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endC
     color: #ccccff;
     }
 
+     div.addthis_toolbox {
+      width:180px;
+      margin: 0 auto;
+    }
+
 
     </style>
 </head>
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <button type="button" class="btn btn-navbar" data-toggle="collapsible" data-target=".nav-collapse">
-	<span class="icon-bar">Home</span>
-	<span class="icon-bar">About</span>
-	<span class="icon-bar">Contact</span>
-	</button>
-      <a class="brand" href="#">DealMeter</a>
-      <div class="nav-collapse collapse">
-	<ul class="nav">
-	  <li class="active"><a href="#">Home</a></li>
-	  <li class="active"><a href="#about">About</a></li>
-	  <li class="active"><a href="#contact">Contact</a></li>
-	  </ul>
-	</div>
 
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">DealMeter</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
-</div>
 
 <div class="container">
 
@@ -183,50 +188,66 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endC
 
   <div class="row-fluid pitch">
     <div class="span5 offset1 video">
-      <img src="http://i.imgur.com/fMxRufT.jpg">
+      <img src="http://i.imgur.com/fMxRufT.jpg" ALT="DealMeter">
     </div>
 
 
     
     <div class="span5 actions">
+      <div class="row-fluid">
+
       <div class="span8 offset2">
-	<div class="statistics">
-	  <div class="span4">
-	    <div class="linediv-l">
-	      <h3>1000</h3> <p>backers</p>
-	      </div>
-	    </div>
-	  <div class="span4">
-	    <div class="linediv-c">
-	      <h3>6,000</h3> <p>of $12,000</p>
-	      </div>
-	  </div>
-	  <div class="span4">
-	    <div class="linediv-r">
-	      <h3>10</h3> <p>days left</p>
-	      </div>
-	  </div>
-	  </div>
+	<div class="row-fluid statistics">
+	    <div class="span4">
+	          <div class="linediv-l">
+		          <h3>1000</h3> <p>backers</p>
+			        </div>
+		      </div>
+	      <div class="span4">
+		    <div class="linediv-c">
+		            <h3>6,000</h3> <p>of $12,000</p>
+			          </div>
+		      </div>
+	        <div class="span4">
+		      <div class="linediv-r">
+			      <h3>10</h3> <p>days left</p>
+			            </div>
+		        </div>
+		  </div>
 	</div>
 
-      <div class="span10 offset1">
-	
-	<div class="thermometer progress active">
-	  <div class="bar bar-success" style="width:60%"></div>
+  <div class="row-fluid">
+  <div class="span10 offset1">
+    
+    <div class="thermometer progress active">
+        <div class="bar bar-success" style="width:60%"></div>
 	  <div class="bar bar-warning" style="width:40%"></div>
-	</div>
-	</div>
+	  </div>
+    </div>
+  </div>
 
+    <div class="row-fluid">
       <div class="span6 offset3 order">
-	<button class="btn btn-success btn-large">Preorder</button>
-	
-	</div>
+	         <a class="coinbase-button" data-code="1c071ac6a24ad6e61c10abf1c7896862" data-button-style="custom_large" href="https://coinbase.com/checkouts/1c071ac6a24ad6e61c10abf1c7896862">Preorder With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+		    </div>
+  </div>
 
-      <div class="span8 offset2 social">
-	<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-	<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-	</div>
+  <div class="row-fluid">
+   <div class="span8 offset2 social">
+          <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        <a class="addthis_button_preferred_1"></a>
+        <a class="addthis_button_preferred_2"></a>
+        <a class="addthis_button_compact"></a>
+        <a class="addthis_counter addthis_bubble_style"></a>
+    </div>
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52025d313fe7159c"></script>
+<!-- AddThis Button END -->
+</div>
+  </div>
 
+      </div>
 
       </div>
 
@@ -234,7 +255,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endC
 
   <div class="row-fluid section1">
     <div class="span5 offset1 asset">
-      <img src="http://i.imgur.com/HNlgkbv.jpg">
+      <img src="http://i.imgur.com/HNlgkbv.jpg" ALT="It's a Deal">
     </div>
     <div class="span5 copy">
       <h3>It's a Deal</h3>
@@ -253,7 +274,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endC
       </div>
 
     <div class="span5 asset">
-      <img  src="http://i.imgur.com/lzVlTLi.jpg">
+      <img  src="http://i.imgur.com/lzVlTLi.jpg" ALT="RealDeal Trends">
     </div>
     
     </div>
@@ -263,25 +284,25 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endC
       <h3>FAQ</h3>
       <div class="accordion" id="accordion2">
 	<div class="accordion-group">
-	  <div class="accordion-heading">
-	    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">What does FAQ stand for?</a>
-	    </div>
-	  <div id="collapseOne" class="accordion-body collapse">
-	    <div class="accordion-inner">
-	      Frequently Asked Questions
-	      </div>
-	    </div>
-	  </div>
+	    <div class="accordion-heading">
+	          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">What does FAQ stand for?</a>
+		      </div>
+	      <div id="collapseOne" class="accordion-body collapse">
+		    <div class="accordion-inner">
+		            Frequently Asked Questions
+			          </div>
+		        </div>
+	        </div>
 	<div class="accordion-group">
-	  <div class="accordion-heading">
-	    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">What's a Frequently Asked Question?</a>
-	    </div>
-	  <div id="collapseTwo" class="accordion-body collapse">
-	    <div class="accordion-inner">
-	      A question that is commonly asked by users.
-	      </div>
-	    </div>
-	  </div>
+	    <div class="accordion-heading">
+	          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">What's a Frequently Asked Question?</a>
+		      </div>
+	      <div id="collapseTwo" class="accordion-body collapse">
+		    <div class="accordion-inner">
+		            A question that is commonly asked by users.
+			          </div>
+		        </div>
+	        </div>
 	</div>
       </div>
 
